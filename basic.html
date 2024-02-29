@@ -1,0 +1,89 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="./basic.css"> 
+</head>
+
+<body>
+      <form>
+    <label >First name:</label>
+    <input id="first" type="text">
+    <br>
+    <label >last name:</label>
+    <input id="second" type="text">
+    <br>
+    <button type="button" onclick="clicks()">Submit</button>
+    <br>
+    <label >Full name:</label>
+    <input id="third" type="text">
+    <br>
+</form>
+    
+    <script>
+    function clicks(){
+      var First = document.getElementById("first").value;
+      var Second = document.getElementById("second").value;
+      var Full = First + ' ' + Second;
+      document.getElementById("third").value=Full;
+    }
+  
+    </script>-->
+
+      
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="./basic.css">
+</head>
+<body> 
+      <div class="container">
+     <input type="text" id="num1" value="Enter the number 1">
+     <br>
+
+     <input type="text" id="num2" value="Enter the number 2">
+     <br>
+     <input type="text" id="ans" value="Answer">
+     <select  id="operation" name="fun">
+      <option value="sum" >addition</option>
+      <option value="sub">subtraction</option>
+      <option value="mul">multiplication</option>
+      <option value="div">division</option>
+     </select>
+     <button onclick="clicks()">calculate</button>
+</div>
+
+            <script>
+                  function clicks(){
+                        var a = document.getElementById("num1").value;
+                        var b =document.getElementById("num2").value;
+                        var operation = document.getElementById("operation").value;
+                        var c;
+                        switch(operation){
+                              case "sum":
+                                    c = parseInt(a)+parseInt(b);
+                                    break;
+                              case "sub":
+                                    c = parseInt(a)-parseInt(b);
+                                    break;
+                              case "mul":
+                                    c = parseInt(a)*parseInt(b);
+                                    break;
+                              case "div":
+                                    c = parseInt(a)/parseInt(b);
+                                    break;
+                              defalut:
+                                  c="Invalid Operator";
+
+                        }
+                        document.getElementById("ans").value=c;
+                  }
+            </script>
+</body>
+</html>

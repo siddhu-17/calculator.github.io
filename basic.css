@@ -1,0 +1,47 @@
+*{
+      padding: 0px;
+      margin: 0px;    
+}
+html,body{
+      background-color: pink;
+}
+.container{
+      background-color: black;
+      width: 250px;
+      padding: 40px;
+      border-radius: 10px;
+      margin-left: 500px;
+      margin-top: 300px;
+   
+}
+#num1{
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 5px;
+}
+#num2{
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 5px;
+}
+#ans{
+      margin-bottom: 10px;
+      border-radius: 5px;
+      padding: 5px;
+}
+#operation{
+      border-radius: 5px;
+      padding: 5px;
+}
+option{
+      border-radius: 5px;
+      padding: 5px;
+}
+button{
+      border-radius: 5px;
+      padding: 5px;
+      color:white;
+     font-family: 'Times New Roman', Times, serif;
+      background-color:red;
+
+}
